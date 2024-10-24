@@ -7,9 +7,9 @@ import org.stayeazy.Entity.Payment;
 import java.util.List;
 
 public interface TenantService {
-    public TenantDTO registerTenant(TenantDTO tenantDTO);
-    public TenantDTO updateTenant(TenantDTO tenantDTO);
-    public TenantDTO viewTenant(Long id);
-    public List<Booking> viewBookingHistory(Long id);
-    public List<Payment> viewPaymentHistory(Long id);
+    TenantDTO registerTenant(TenantDTO tenantDTO);
+    TenantDTO updateTenant(TenantDTO tenantDTO);
+    TenantDTO viewTenant(Long id);
+    List<Booking> viewBookingHistory(Long id);
+    List<Payment> viewPaymentHistory(Long id);
 }

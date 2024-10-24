@@ -13,10 +13,9 @@ import java.util.List;
 @Data
 public class Tenant extends BaseEntity {
 
-
     private String name;
     private String mail;
-    private String Gender;
+    private String gender;
     private String phoneNumber;
 
     @ManyToOne(fetch = FetchType.EAGER)

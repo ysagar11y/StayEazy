@@ -1,5 +1,6 @@
 package org.stayeazy.Service.Impl;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.stayeazy.DTO.TenantDTO;
 import org.stayeazy.Entity.Booking;
@@ -15,10 +16,10 @@ import java.util.List;
 @Service
 public class TenantServiceImpl implements TenantService {
 
-
+    @Autowired
     TenantRepo tenantRepo;
 
-    TenantMapper tenantMapper;
+    private final TenantMapper tenantMapper = TenantMapper.INSTANCE;
 
 
     @Override
